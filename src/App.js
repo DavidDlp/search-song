@@ -1,11 +1,11 @@
 //Styles
 import "./styles/app.scss";
 //components
-import Home from "./pages/Home";
+import Home from "./core/Home";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Home />
     </div>
   );

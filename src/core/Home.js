@@ -1,7 +1,7 @@
 import React from "react";
 
 //components
-import SongSearch from "./SongSearch";
+import SongSearch from "./../pages/SongSearch";
 
 const Home = () => {
   return (
