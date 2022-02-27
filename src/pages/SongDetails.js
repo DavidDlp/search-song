@@ -1,9 +1,14 @@
 import React from "react";
 
+//Components
+import SongArtist from "../components/SongArtist";
+import SongLyrics from "../components/SongLyrics";
+
 const SongDetails = () => {
   return (
     <div>
-      <h1>Esto es Song Details</h1>
+      <SongArtist />
+      <SongLyrics />
     </div>
   );
 };

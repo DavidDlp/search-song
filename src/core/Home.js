@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 //components
 import SongSearch from "./../pages/SongSearch";
-import SongDetails from "../pages/SongDetails";
+import FavoriteSong from "../pages/FavoriteSong";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       </div>
       <Routes>
         <Route path="/song-search" element={<SongSearch />} />
-        <Route path="/favorite-song" element={<SongDetails />} />
+        <Route path="/favorite-song" element={<FavoriteSong />} />
       </Routes>
     </div>
   );
