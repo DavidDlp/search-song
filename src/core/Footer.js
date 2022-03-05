@@ -1,9 +1,12 @@
 import React from "react";
+//Components
+import ContactMe from "../components/ContactMe";
 
 const Footer = () => {
   return (
-    <div>
-      <h1>Esto es el Footer</h1>
+    <div className="section">
+      <ContactMe />
+      <h6>&copy; DavidDlp "Roma"</h6>
     </div>
   );
 };

@@ -3,11 +3,17 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div>
-      <h1>Esto es el logo</h1>
-      <Link to="/">Home</Link>
-      <Link to="/song-search">Search</Link>
-      <Link to="/favorite-song">Favorite</Link>
+    <div className="container-header">
+      <div className="container-header__title">
+        <h1 className="container-header__title--logo">
+          Diving<span className="text">Paradise</span>
+        </h1>
+      </div>
+      <navbar>
+        <Link to="/">Home</Link>
+        <Link to="/song-search">Search</Link>
+        <Link to="/favorite-song">Favorite</Link>
+      </navbar>
     </div>
   );
 };
