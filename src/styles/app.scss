@@ -3,3 +3,7 @@
 @import "./base/globals";
 @import "./base/variables";
 @import "./base/mixins";
+
+/*Layout*/
+@import "./layouts/footer";
+@import "./layouts/-navbar.scss";
