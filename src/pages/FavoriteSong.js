@@ -1,9 +1,22 @@
 import React from "react";
+import FavoriteTableRow from "../components/FavoriteTableRow";
 
 const FavoriteSong = () => {
   return (
-    <div>
-      <h1>Estas son mis canciones favoritas</h1>
+    <div className="gnl-box">
+      <h3>Mis canciones favoritas</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Artista</th>
+            <th>Letra de la canción </th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <FavoriteTableRow />
+        </tbody>
+      </table>
     </div>
   );
 };

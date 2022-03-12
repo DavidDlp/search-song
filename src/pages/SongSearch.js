@@ -6,8 +6,8 @@ import SongDetails from "./SongDetails";
 
 const SongSearch = () => {
   return (
-    <div>
-      <h1>Song Search</h1>
+    <div className="gnl-box">
+      <h3>Song Search</h3>
       <SongForm />
       <SongDetails />
     </div>
