@@ -1,9 +1,12 @@
 /*Base*/
+@import "./base/fonts";
 @import "./base/normalize";
 @import "./base/globals";
 @import "./base/variables";
 @import "./base/mixins";
 
 /*Layout*/
+@import "./layouts/home";
 @import "./layouts/footer";
-@import "./layouts/-navbar.scss";
+@import "./layouts/navbar";
+@import "./layouts/search";

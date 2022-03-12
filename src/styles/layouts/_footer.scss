@@ -1,5 +1,12 @@
-.section {
-  min-height: "10vh";
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
   text-align: center;
-  background-color: brown;
+  background-color: grey;
+
+  & a {
+    font-size: 3rem;
+  }
 }

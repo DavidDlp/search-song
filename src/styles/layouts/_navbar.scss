@@ -1,0 +1,41 @@
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 10vh;
+  width: 100vw;
+  background-color: grey;
+
+  &__title {
+    flex: 1;
+    background-color: none;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.7);
+    &--logo {
+      color: white;
+      margin-left: 1.5em;
+    }
+    &--text {
+      color: purple;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+navbar {
+  flex: 1;
+  text-align: center;
+  padding: 1.4em;
+  background-color: none;
+  color: black;
+
+  & a {
+    padding: 1em;
+    color: black;
+    text-shadow: 2px 1px rgba(255, 255, 255, 0.5);
+
+    &:hover {
+      background-color: purple;
+    }
+  }
+}

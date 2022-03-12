@@ -1,0 +1,16 @@
+.grl-container {
+  background-image: url("./../../assets/img-cover.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-height: $bodyHeight;
+
+  &__text {
+    text-align: center;
+    color: rgba(207, 201, 201, 0.7);
+    padding: 5%;
+  }
+}
