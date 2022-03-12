@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "react-image-webp": "^0.8.0"
   }
 }
