@@ -6,7 +6,7 @@ const NavBar = () => {
     <div className="container-header">
       <div className="container-header__title">
         <h1 className="container-header__title--logo">
-          Diving<span className="text">Paradise</span>
+          Search<span className="container-header__title--text">Song</span>
         </h1>
       </div>
       <navbar>
