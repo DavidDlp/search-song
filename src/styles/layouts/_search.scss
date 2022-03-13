@@ -1,3 +1,58 @@
 .gnl-box {
   min-height: $bodyHeight;
+  color: white;
+
+  &__searchBox {
+    width: 100%;
+    min-height: 10vh;
+    margin-top: 2em;
+
+    form {
+      border-bottom: 0.1rem solid #eee;
+      width: 80%;
+      height: auto;
+      margin: auto;
+    }
+
+    input[type="submit"] {
+      border: thin solid #444;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem 2rem 0;
+      display: inline-block;
+      background-color: #eee;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 1;
+      text-transform: none;
+      text-decoration: none;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+    input[type="text"] {
+      border: thin solid #dedede;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      outline: none;
+      display: block;
+      width: 100%;
+      font-size: 1rem;
+      line-height: 1;
+      background-color: transparent;
+    }
+  }
+
+  &__detailsBox {
+    margin-top: 2rem;
+
+    &--artistBox,
+    &--lyricsBox {
+      border: 1px solid #dedede;
+      text-align: center;
+    }
+  }
 }

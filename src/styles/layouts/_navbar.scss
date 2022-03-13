@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   min-height: 10vh;
   width: 100vw;
-  background-color: grey;
+  background-color: $greyLight;
 
   &__title {
     flex: 1;
@@ -16,7 +16,7 @@
       margin-left: 1.5em;
     }
     &--text {
-      color: purple;
+      color: $ultramarine;
       font-size: 2.5rem;
     }
   }
@@ -35,7 +35,7 @@ navbar {
     text-shadow: 2px 1px rgba(255, 255, 255, 0.5);
 
     &:hover {
-      background-color: purple;
+      background-color: $ultramarine;
     }
   }
 }

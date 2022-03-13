@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #410f0f;
+  background-color: #0c1821;
   font-family: $mainFont;
   font-size: 1.8rem;
   line-height: 1.6;
@@ -21,12 +21,12 @@ a {
   text-decoration: none;
 }
 
-// img,
-// picture {
-//   width: 100%;
-//   display: block;
-//   height: auto;
-// }
+img,
+picture {
+  width: 100%;
+  display: block;
+  height: auto;
+}
 
 h1,
 h2,
