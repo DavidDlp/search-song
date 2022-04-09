@@ -1,7 +1,7 @@
 import React from "react";
 import FavoriteTableRow from "../components/FavoriteTableRow";
 
-const FavoriteSong = () => {
+const FavoriteSongs = () => {
   return (
     <div className="gnl-box">
       <h3>Mis canciones favoritas</h3>
@@ -21,4 +21,4 @@ const FavoriteSong = () => {
   );
 };
 
-export default FavoriteSong;
+export default FavoriteSongs;

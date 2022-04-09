@@ -9,7 +9,7 @@ import Footer from "./core/Footer";
 //Routes
 import Home from "./pages/Home";
 import SongSearch from "./pages/SongSearch";
-import FavoriteSong from "./pages/FavoriteSong";
+import FavoriteSongs from "./pages/FavoriteSongs";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/song-search" element={<SongSearch />} />
-        <Route path="/favorite-song" element={<FavoriteSong />} />
+        <Route path="/favorite-song" element={<FavoriteSongs />} />
       </Routes>
       <Footer />
     </div>

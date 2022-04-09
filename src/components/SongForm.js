@@ -44,7 +44,7 @@ const SongForm = ({ handleSearch }) => {
           onChange={handleChange}
           value={form.song}
         />
-        <input type="submit" value="Enviar" />
+        <input type="submit" value="Search" />
       </form>
     </div>
   );
