@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 10vh;
+  height: 10vh;
   width: 100vw;
   background-color: $greyLight;
 
@@ -37,13 +37,37 @@
         background-color: $ultramarine;
       }
     }
+  }
+  &__toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    display: none;
+    margin: 20px 20px 0 0;
+  }
+}
 
-    &--toggle {
-      color: white;
-      background: none;
-      border: none;
-      font-size: 3rem;
+// **Mobile**
+@include tablet {
+  .container-header {
+    &__navbar {
       display: none;
     }
+
+    &__toggle {
+      display: block;
+    }
+  }
+  #hidden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $greyLight;
+    position: fixed;
+    width: 40%;
+    height: calc(100vh - 20vh);
+    left: 0;
+    top: 10vh;
   }
 }
