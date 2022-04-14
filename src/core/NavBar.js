@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
+  const menuToggleHandler = () => {
+    setShowLinks(!showLinks);
+  };
+
   return (
     <div className="container-header">
       <div className="container-header__title">
@@ -22,9 +26,15 @@ const NavBar = () => {
         className="container-header__navbar "
         id={showLinks ? "hidden" : ""}
       >
-        <Link to="/">Home</Link>
-        <Link to="/song-search">Search</Link>
-        <Link to="/favorite-song">Favorite</Link>
+        <Link to="/" onClick={menuToggleHandler}>
+          Home
+        </Link>
+        <Link to="/song-search" onClick={menuToggleHandler}>
+          Search
+        </Link>
+        <Link to="/favorite-song" onClick={menuToggleHandler}>
+          Favorite
+        </Link>
       </navbar>
     </div>
   );
