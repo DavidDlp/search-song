@@ -18,7 +18,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/song-search" element={<SongSearch />} />
-        <Route path="/favorite-song" element={<FavoriteSongs />} />
+        <Route path="/favorite-song" element={<FavoriteSongs />}>
+          {/* <Route path="/:id" element={#}/> */}
+        </Route>
+        <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
       <Footer />
     </div>
