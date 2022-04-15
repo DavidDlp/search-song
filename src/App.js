@@ -10,6 +10,7 @@ import Footer from "./core/Footer";
 import Home from "./pages/Home";
 import SongSearch from "./pages/SongSearch";
 import FavoriteSongs from "./pages/FavoriteSongs";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/favorite-song" element={<FavoriteSongs />}>
           {/* <Route path="/:id" element={#}/> */}
         </Route>
-        <Route path="*" element={<h1>Not Found</h1>} />
+        <Route path="*" element={NotFound} />
       </Routes>
       <Footer />
     </div>
