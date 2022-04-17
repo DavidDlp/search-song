@@ -8,11 +8,16 @@ import SongDetails from "./SongDetails";
 import { helpHttp } from "./../servicies/helpHttp";
 import Loader from "./../servicies/Loader";
 
+let myFavoritesSongsInit =
+  JSON.parse(localStorage.getItem("myFavoritesSongs")) || [];
+
 const SongSearch = () => {
   const [search, setSearch] = useState(null);
   const [lyric, setLyric] = useState(null);
   const [bio, setBio] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [myFavoritesSongs, setMyFavoritesSongs] =
+    useState(myFavoritesSongsInit);
 
   useEffect(() => {
     if (search === null) return;
@@ -38,16 +43,32 @@ const SongSearch = () => {
     };
 
     searchData();
-  }, [search]);
+
+    localStorage.setItem("myFavoritesSongs", JSON.stringify(myFavoritesSongs));
+  }, [search, myFavoritesSongs]);
 
   const handleSearch = (data) => {
     // console.log(data);
     setSearch(data);
   };
 
+  const handleSaveSong = () => {
+    alert("Guardando la canción en favoritos");
+    let newSong = {
+      search,
+      lyric,
+      bio,
+    };
+
+    let songs = [...myFavoritesSongs, newSong];
+    setMyFavoritesSongs(songs);
+    setSearch(null);
+    localStorage.setItem("myFavoritesSongs", JSON.stringify(songs));
+  };
+
   return (
     <div className="gnl-box">
-      <SongForm handleSearch={handleSearch} />
+      <SongForm handleSearch={handleSearch} handleSaveSong={handleSaveSong} />
       {loading && <Loader />}
       {search && !loading && (
         <SongDetails search={search} lyric={lyric} bio={bio} />
