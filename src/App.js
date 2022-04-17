@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import SongSearch from "./pages/SongSearch";
 import FavoriteSongs from "./pages/FavoriteSongs";
 import NotFound from "./pages/NotFound";
+//import SongPage from "./pages/SongPage";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/song-search" element={<SongSearch />} />
         <Route path="/favorite-song" element={<FavoriteSongs />}>
-          {/* <Route path="/:id" element={#}/> */}
+          {/* <Route path="/:id" element={<SongPage />} /> */}
         </Route>
         <Route path="*" element={NotFound} />
       </Routes>
